@@ -1,0 +1,390 @@
+/*=== Common ===*/
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.horizontal_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title_section {
+  font-size: 30px;
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+.description_section {
+  font-size: 20px;
+  text-align: center;
+}
+.text_container_sections {
+  margin: 0 0 48px 0;
+}
+/*=== Header ===*/
+.logo {
+  width: 125px;
+}
+
+.navigation_list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  font-size: 16px;
+}
+
+.navigation_link {
+  color: black;
+  text-decoration: none;
+}
+.navigation_container {
+  align-items: center;
+  gap: 24px;
+}
+
+.navigation_button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+  color: white;
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/*=== Hero section===*/
+.hero_section {
+  background-color: gray;
+  color: #ffff;
+  padding: 100px 0;
+}
+
+.header_hero {
+  font-size: 48px;
+  max-width: 670px;
+  margin: 0 0 24px 0;
+}
+
+.description_hero {
+  font-size: 20px;
+  margin: 0 0 32px 0;
+}
+
+.hero_button_blue {
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  background-color: rgb(59 130 246);
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+.hero_button_white {
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  --tw-bg-opacity: 1;
+  background-color: #ffff;
+  color: rgb(59 130 246);
+  border: none;
+  font-size: 16px;
+}
+
+.button_box {
+  display: flex;
+  gap: 1rem;
+}
+
+/*=== About ===*/
+.about_section {
+  margin: 100px 0;
+}
+
+.img_about {
+  max-width: 736px;
+  border-radius: 16px;
+}
+
+.container_about {
+  display: flex;
+  gap: 2rem;
+}
+
+.content_container_about {
+  display: flex;
+  align-items: center;
+}
+
+.title_about_description {
+  font-size: 24px;
+  margin: 0 0 16px 0;
+}
+
+.about_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  font-size: 16px;
+}
+
+.check_img {
+  max-width: 20px;
+  margin-right: 16px;
+}
+
+.about_element {
+  font-size: 16px;
+}
+
+/*=== Service ===*/
+.service_section {
+  background: rgb(249 250 251);
+  padding: 100px 0;
+}
+.service_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.img_service {
+  border-radius: 16px 16px 0 0;
+  object-position: top;
+  object-fit: cover;
+  height: 12rem;
+  width: 100%;
+  max-width: 100%;
+}
+/*===card===*/
+.card {
+  border-radius: 16px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.content_box_card {
+  padding: 24px;
+}
+.card_title .card_description {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+.card_content_text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.circle_card {
+  background-color: rgb(219 234 254);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+.icon_card {
+  max-width: 20px;
+}
+
+/*=== Our Works===*/
+.our_works_section {
+  padding: 100px 0;
+}
+
+.our_works_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.our_card {
+  width: 100%;
+  height: 16rem;
+  max-width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: top;
+}
+
+/*=== Record ===*/
+.record_section {
+  padding: 100px 0;
+  background: rgb(249 250 251);
+}
+.list_days {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+}
+.day_element {
+}
+.data_time {
+  width: 100%;
+}
+.record_container {
+  gap: 2rem;
+  background-color: rgb(255 255 255);
+  border-radius: 16px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  padding: 2rem;
+}
+.form_container {
+  width: 100%;
+}
+.text_select_data {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.form_input_section {
+  display: flex;
+  flex-direction: column;
+}
+.text_lable {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.input_text_form {
+  padding: 0.5rem 1rem;
+  border-color: rgb(209 213 219);
+  border-radius: 8px;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  margin-bottom: 12px;
+}
+.select_service {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.selecter_check_box_services {
+  display: flex;
+  gap: 8px;
+}
+.text_selecter_check_box_services {
+  font-size: 16px;
+}
+.selecter_service_box {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.comment_box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+.comment {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.input_text_comment {
+  resize: none;
+  padding: 0.5rem 1rem;
+  border-color: rgb(209 213 219);
+  border-radius: 8px;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  height: 90px;
+}
+
+.btn {
+  margin-top: 32px;
+  width: 100%;
+}
+
+/*=== Contact ===*/
+.contacts {
+  padding: 100px 0;
+}
+.contact_data {
+  display: flex;
+  gap: 16px;
+}
+.map {
+  width: 100%;
+  height: 400px;
+  background: gray;
+}
+.contact_content {
+  width: 100%;
+}
+.circle_contact {
+  background-color: rgb(219 234 254);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+.title_contact {
+  font-size: 18px;
+}
+.description_contact {
+  font-size: 16px;
+}
+.contact_link_style {
+  color: black;
+
+  text-decoration: none;
+}
+.contact_box_data {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.social_list {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+.icon_contact {
+  max-width: 22px;
+}
+.social_contact_box {
+  margin-top: 40px;
+}
+
+/*=== Footer ===*/
+.footer {
+  background: rgb(17 24 39);
+  padding: 100px 0;
+}
+.footer_title {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: white;
+}
+.link_maxiCleaning {
+  color: white;
+  text-decoration: none;
+}
+.footer_box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.footer_list {
+  color: rgb(156 163 175);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  gap: 8px;
+}
+.color_footer_text {
+  color: rgb(156 163 175);
+}
+.footer_box_size {
+  max-width: 100%;
+}
