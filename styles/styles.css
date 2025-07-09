@@ -224,8 +224,50 @@ html {
   list-style: none;
   width: 100%;
 }
-.day_element {
+.week-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
 }
+
+.date-block {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  min-width: 120px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.day-name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.date-text {
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.past {
+  background-color: rgb(107, 107, 107);
+}
+
+.default {
+  background-color: rgb(59, 130, 246);
+}
+
+.selected {
+  background-color: rgb(25, 77, 163);
+}
+
 .data_time {
   width: 100%;
 }
@@ -387,4 +429,26 @@ html {
 }
 .footer_box_size {
   max-width: 100%;
+}
+.clock_selecter {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.activate_clock {
+  background-color: rgb(59 130 246);
+}
+.deactivate_clock {
+  background-color: rgb(107, 107, 107);
+}
+.selected_clock {
+  background-color: rgb(25 77 163);
+}
+.common_clock_style {
+  border: 1px solid;
+  padding: 0.5rem 0.75rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
 }

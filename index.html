@@ -333,16 +333,27 @@
           <div class="horizontal_box record_container">
             <div class="data_time">
               <h3 class="font_Montserrat_B text_select_data">Выберите дату</h3>
-              <ul class="list_days">
-                <li class="day_element">Пн</li>
-                <li class="day_element">Вт</li>
-                <li class="day_element">Ср</li>
-                <li class="day_element">Чт</li>
-                <li class="day_element">Пт</li>
-                <li class="day_element">Сб</li>
-                <li class="day_element">Вс</li>
-              </ul>
+
+              <div
+                id="week-dates"
+                class="week-container font_Montserrat_R"
+              ></div>
+
               <h3 class="font_Montserrat_B text_select_data">Выберите время</h3>
+              <div class="clock_selecter font_Montserrat_R">
+                <div class="activate_clock common_clock_style">9:00</div>
+                <div class="activate_clock common_clock_style">10:00</div>
+                <div class="activate_clock common_clock_style">11:00</div>
+                <div class="activate_clock common_clock_style">12:00</div>
+                <div class="activate_clock common_clock_style">13:00</div>
+                <div class="activate_clock common_clock_style">14:00</div>
+                <div class="activate_clock common_clock_style">15:00</div>
+                <div class="activate_clock common_clock_style">16:00</div>
+                <div class="activate_clock common_clock_style">17:00</div>
+                <div class="activate_clock common_clock_style">18:00</div>
+                <div class="activate_clock common_clock_style">19:00</div>
+                <div class="activate_clock common_clock_style">20:00</div>
+              </div>
             </div>
             <div class="form_container">
               <h3 class="text_select_data font_Montserrat_B">Ваши данные</h3>
@@ -581,49 +592,53 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="wrapper">
-          <div class="footer_box">
-            <div class="footer_box_size">
-              <div class="font_Montserrat_B footer_title">
-                <a href="#" class="link_maxiCleaning">МаксиКлининг</a>
-              </div>
-              <div class="font_Montserrat_R color_footer_text">
-                Профессиональный детейлинг и уход за вашим автомобилем
-              </div>
-              <div></div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer_box">
+          <div class="footer_box_size">
+            <div class="font_Montserrat_B footer_title">
+              <a href="#" class="link_maxiCleaning">МаксиКлининг</a>
             </div>
-            <div class="font_Montserrat_B footer_title footer_box_size">
-              Услуги
-              <ul class="footer_list font_Montserrat_R">
-                <li><a href="">Детейлинг-мойка</a></li>
-                <li><a href="">Полировка кузова</a></li>
-                <li><a href="">Полировка фар</a></li>
-                <li><a href="">Защитные покрытия</a></li>
-                <li><a href="">Детейлинг салона</a></li>
-              </ul>
+            <div class="font_Montserrat_R color_footer_text">
+              Профессиональный детейлинг и уход за вашим автомобилем
             </div>
-            <div class="font_Montserrat_B footer_title footer_box_size">
-              Информация
-              <ul class="footer_list font_Montserrat_R">
-                <li><a href="">О Нас</a></li>
-                <li><a href="">Наши работы</a></li>
-                <li><a href="">Контакты</a></li>
-                <li><a href="">Цены</a></li>
-              </ul>
-            </div>
-            <div class="font_Montserrat_B footer_title footer_box_size">
-              Контакты
-              <ul class="footer_list font_Montserrat_R">
-                <li><a href="">Адрес</a></li>
-                <li><a href="">Телефон</a></li>
-                <li><a href="">Почта</a></li>
-                <li><a href="">Время работы</a></li>
-              </ul>
-            </div>
+            <div></div>
+          </div>
+          <div class="font_Montserrat_B footer_title footer_box_size">
+            Услуги
+            <ul class="footer_list font_Montserrat_R">
+              <li><a href="">Детейлинг-мойка</a></li>
+              <li><a href="">Полировка кузова</a></li>
+              <li><a href="">Полировка фар</a></li>
+              <li><a href="">Защитные покрытия</a></li>
+              <li><a href="">Детейлинг салона</a></li>
+            </ul>
+          </div>
+          <div class="font_Montserrat_B footer_title footer_box_size">
+            Информация
+            <ul class="footer_list font_Montserrat_R">
+              <li><a href="">О Нас</a></li>
+              <li><a href="">Наши работы</a></li>
+              <li><a href="">Контакты</a></li>
+              <li><a href="">Цены</a></li>
+            </ul>
+          </div>
+          <div class="font_Montserrat_B footer_title footer_box_size">
+            Контакты
+            <ul class="footer_list font_Montserrat_R">
+              <li><a href="">Адрес</a></li>
+              <li><a href="">Телефон</a></li>
+              <li><a href="">Почта</a></li>
+              <li><a href="">Время работы</a></li>
+            </ul>
           </div>
         </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="submitRecord.js"></script>
+    <script src="week.js"></script>
+    <script src="clock.js"></script>
   </body>
 </html>
