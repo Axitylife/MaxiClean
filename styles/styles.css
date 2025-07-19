@@ -226,29 +226,11 @@ html {
 }
 .week-container {
   display: flex;
-  gap: 8px;
-  margin-top: 20px;
-}
-
-.day-button {
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  color: white;
-  min-width: 50px;
-  text-align: center;
-  background-color: rgb(59 130 246); /* стандартный */
-}
-
-.day-button.inactive {
-  background-color: gray;
-  cursor: not-allowed;
-  opacity: 0.6;
-}
-
-.day-button.selected {
-  background-color: rgb(30, 64, 175); /* выбраный */
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
 }
 
 .date-block {
@@ -448,34 +430,20 @@ html {
 .footer_box_size {
   max-width: 100%;
 }
-.time-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 20px;
+.clock_selecter {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
 }
-
-.time-button {
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  color: white;
-  min-width: 60px;
-  text-align: center;
-  background-color: rgb(59 130 246); /* стандартный */
+.activate_clock {
+  background-color: rgb(59 130 246);
 }
-
-.time-button.inactive {
-  background-color: gray;
-  cursor: not-allowed;
-  opacity: 0.6;
+.deactivate_clock {
+  background-color: rgb(107, 107, 107);
 }
-
-.time-button.selected {
-  background-color: rgb(30, 64, 175); /* выбраный */
+.selected_clock {
+  background-color: rgb(25 77 163);
 }
-
 .common_clock_style {
   border: 1px solid;
   padding: 0.5rem 0.75rem;
