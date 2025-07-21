@@ -51,11 +51,17 @@
             Мы заботимся о вашем автомобиле как о своем собственном
           </p>
           <div class="button_box">
-            <button class="hero_button_blue font_Montserrat_M">
-              Записаться</button
-            ><button class="hero_button_white font_Montserrat_M">
+            <a
+              href="#recording"
+              class="font_Montserrat_M hero_button_blue link_btn"
+            >
+              Записаться</a
+            ><a
+              href="#services"
+              class="hero_button_white link_btn font_Montserrat_M"
+            >
               Наши услуги
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -335,29 +341,19 @@
               <h3 class="font_Montserrat_B text_select_data">Выберите дату</h3>
 
               <div
-                id="week-dates"
+                id="week-picker"
                 class="week-container font_Montserrat_R"
               ></div>
 
               <h3 class="font_Montserrat_B text_select_data">Выберите время</h3>
-              <div class="clock_selecter font_Montserrat_R">
-                <div class="activate_clock common_clock_style">9:00</div>
-                <div class="activate_clock common_clock_style">10:00</div>
-                <div class="activate_clock common_clock_style">11:00</div>
-                <div class="activate_clock common_clock_style">12:00</div>
-                <div class="activate_clock common_clock_style">13:00</div>
-                <div class="activate_clock common_clock_style">14:00</div>
-                <div class="activate_clock common_clock_style">15:00</div>
-                <div class="activate_clock common_clock_style">16:00</div>
-                <div class="activate_clock common_clock_style">17:00</div>
-                <div class="activate_clock common_clock_style">18:00</div>
-                <div class="activate_clock common_clock_style">19:00</div>
-                <div class="activate_clock common_clock_style">20:00</div>
-              </div>
+              <div
+                id="time-picker"
+                class="time-container font_Montserrat_R"
+              ></div>
             </div>
             <div class="form_container">
               <h3 class="text_select_data font_Montserrat_B">Ваши данные</h3>
-              <form action="post">
+              <form action="submit.php" method="post">
                 <div class="form_input_section">
                   <label for="name" class="text_lable font_Montserrat_L"
                     >Имя</label
@@ -366,14 +362,17 @@
                     name="name"
                     id="name"
                     class="input_text_form"
+                    required
                   />
                   <label for="phone" class="text_lable font_Montserrat_L"
                     >Телефон</label
                   ><input
-                    type="phone"
+                    type="tel"
                     id="phone"
                     name="phone"
                     class="input_text_form"
+                    placeholder="+7(___)___-__-__"
+                    required
                   />
                   <label for="auto" class="text_lable font_Montserrat_L"
                     >Модель автомобиля</label
@@ -384,9 +383,9 @@
                     class="input_text_form"
                   />
                 </div>
-                <div class="font_Montserrat_L select_service">
+                <h3 class="font_Montserrat_L select_service">
                   Выберите услуги
-                </div>
+                </h3>
                 <div class="selecter_service_box">
                   <div class="selecter_check_box_services">
                     <input
@@ -465,8 +464,10 @@
                     class="input_text_comment"
                   ></textarea>
                 </div>
+                <input type="hidden" name="selected_date" id="selected_date" />
+                <input type="hidden" name="selected_time" id="selected_time" />
                 <button
-                  type="button"
+                  type="submit"
                   class="hero_button_blue font_Montserrat_B btn"
                 >
                   Записаться
@@ -608,37 +609,48 @@
           <div class="font_Montserrat_B footer_title footer_box_size">
             Услуги
             <ul class="footer_list font_Montserrat_R">
-              <li><a href="">Детейлинг-мойка</a></li>
-              <li><a href="">Полировка кузова</a></li>
-              <li><a href="">Полировка фар</a></li>
-              <li><a href="">Защитные покрытия</a></li>
-              <li><a href="">Детейлинг салона</a></li>
+              <li><a href="" class="footer_link">Детейлинг-мойка</a></li>
+              <li><a href="" class="footer_link">Полировка кузова</a></li>
+              <li><a href="" class="footer_link">Полировка фар</a></li>
+              <li><a href="" class="footer_link">Защитные покрытия</a></li>
+              <li><a href="" class="footer_link">Детейлинг салона</a></li>
             </ul>
           </div>
           <div class="font_Montserrat_B footer_title footer_box_size">
             Информация
             <ul class="footer_list font_Montserrat_R">
-              <li><a href="">О Нас</a></li>
-              <li><a href="">Наши работы</a></li>
-              <li><a href="">Контакты</a></li>
-              <li><a href="">Цены</a></li>
+              <li><a href="" class="footer_link">О Нас</a></li>
+              <li><a href="" class="footer_link">Наши работы</a></li>
+              <li><a href="" class="footer_link">Контакты</a></li>
+              <li><a href="" class="footer_link">Цены</a></li>
             </ul>
           </div>
           <div class="font_Montserrat_B footer_title footer_box_size">
             Контакты
             <ul class="footer_list font_Montserrat_R">
-              <li><a href="">Адрес</a></li>
-              <li><a href="">Телефон</a></li>
-              <li><a href="">Почта</a></li>
-              <li><a href="">Время работы</a></li>
+              <li>
+                <a href="" class="footer_link">Москва, ул. Автомобильная, 42</a>
+              </li>
+              <li>
+                <a href="+7 (495) 123-45-67" class="footer_link"
+                  >+7 (495) 123-45-67</a
+                >
+              </li>
+              <li><a href="" class="footer_link">info@максиклининг.рф</a></li>
+              <li><a href="" class="footer_link">Пн-Пт: 9:00 - 20:00</a></li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
     <script src="./script.js"></script>
-    <script src="submitRecord.js"></script>
-    <script src="week.js"></script>
-    <script src="clock.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js"></script>
+
+    <script>
+      const phoneMask = IMask(document.getElementById("phone"), {
+        mask: "+{7}(000)000-00-00",
+      });
+    </script>
   </body>
 </html>
